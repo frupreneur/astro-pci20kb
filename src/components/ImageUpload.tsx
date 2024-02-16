@@ -30,7 +30,7 @@ export default function ImageUpload() {
   const [converting, setConverting] = useState<true | false>(false);
   const [compressionValue, setCompressionValue] = useState<
     (typeof compressionValueOptions)[0]
-  >(compressionValueOptions[1]);
+  >(compressionValueOptions[0]);
 
   const onDrop = React.useCallback((acceptedFiles: File[]) => {
     setConverting(true);

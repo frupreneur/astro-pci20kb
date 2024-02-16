@@ -6,8 +6,8 @@ type MenuType = {
 export const menu: MenuType = [
   { name: "Home", path: "/" },
   {
-    name: "Blog",
-    path: "/blog",
+    name: "Articles",
+    path: "/articles",
   },
   {
     name: "About Us",
@@ -29,8 +29,8 @@ export const footerMenu: MenuType = [
     path: "/about",
   },
   {
-    name: "Blog",
-    path: "/blog",
+    name: "Articles",
+    path: "/articles",
   },
   {
     name: "Terms and Conditions",
