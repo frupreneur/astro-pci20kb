@@ -23,7 +23,19 @@ const posts = allPosts.sort((a,b) =>  b.frontmatter.publishDate - a.frontmatter.
         20kb automatically within a second.
         <br />
       </p>
-      <ImageUpload client:load />
+     
+      <ImageUpload   client:load />
+      <small>Advertisement</small>
+      <ins class="adsbygoogle min-h-[250px] "
+      style="display:block"
+      data-ad-client="ca-pub-8849438768625360"
+      data-ad-slot="6864703937"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+ 
+      >
+      
+     </ins>
       <div style={{ textAlign:  "left" }}>
 Welcome to best photo converter into 20kb tool, here just drag and drop
 or upload your photo via select option, then your uploading will start,
@@ -215,9 +227,41 @@ download option, you can download your photo and use it in your work.
           {posts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
           
         </ul>
+        
+     
+     
+     
       </div>
+      <center>  
+        <small>Advertisement</small>
+        <ins class="adsbygoogle min-h-[300px]  "
+        style="display:block"
+        data-ad-client="ca-pub-8849438768625360"
+        data-ad-slot="6864703937"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+   
+        >
+        
+       </ins> </center>
 	</>
 </Layout>
+
+<script>
+  const adCount = 2;
+
+  setTimeout(function(){
+    for (var i = 0; i < adCount; i++){
+      const adsFromGoogle =  window.adsbygoogle || []
+      adsFromGoogle.push({});
+    }
+  }, 3000)
+
+  
+
+  
+
+</script>
 
 
 <!-- write a short article website section content on "photo convert into 50 kb - Why you should convert your photos into 50 kb" -->

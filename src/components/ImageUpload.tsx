@@ -11,11 +11,16 @@ interface File extends Blob {
   readonly lastModified: number;
   readonly name: string;
 }
-type imagePreview = {
+type imagePreviewType = {
   name: string;
   oldSize: number;
   newSize: number;
   url: string;
+};
+type compressionOptions = {
+  options: { value: number; label: string };
+  fromEXT?: string;
+  toEXT?: string;
 };
 const compressionValueOptions = [
   { value: 20000, label: "20KB" },
@@ -24,9 +29,10 @@ const compressionValueOptions = [
   { value: 200000, label: "200KB" },
   { value: 250000, label: "250KB" },
 ];
+
 export default function ImageUpload() {
   const [files, setFiles] = React.useState<File[] | []>([]);
-  const [preview, setPreview] = useState<imagePreview[] | []>([]);
+  const [preview, setPreview] = useState<imagePreviewType[] | []>([]);
   const [converting, setConverting] = useState<true | false>(false);
   const [compressionValue, setCompressionValue] = useState<
     (typeof compressionValueOptions)[0]
