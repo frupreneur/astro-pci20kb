@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import ImageUpload from '../components/ImageUpload';
+import Ad1 from '../components/adx/Ad1.astro';
+import Ad2 from '../components/adx/Ad2.astro';
 import firstImage from "../../public/assets/convert photo into 20kb first step.jpg";
 import finalImage from "../../public/assets/convert photo into 20kb final step.jpg";
 
@@ -25,15 +27,7 @@ const posts = allPosts.sort((a,b) =>  b.frontmatter.publishDate - a.frontmatter.
       </p>
      
       <ImageUpload   client:load />
-      <small>Advertisement</small>
-      <ins class="adsbygoogle min-h-[250px] "
-      style="display:block"
-      data-ad-client="ca-pub-8849438768625360"
-      data-ad-slot="6864703937"
-      data-ad-format="auto"
-      data-full-width-responsive="true"
- 
-      >
+      <Ad1 />
       
      </ins>
       <div style={{ textAlign:  "left" }}>
@@ -232,38 +226,8 @@ download option, you can download your photo and use it in your work.
      
      
       </div>
-      <center>  
-        <small>Advertisement</small>
-        <ins class="adsbygoogle min-h-[300px]  "
-        style="display:block"
-        data-ad-client="ca-pub-8849438768625360"
-        data-ad-slot="6864703937"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-   
-        >
-        
-       </ins> </center>
+      <Ad2 />
 	</>
 </Layout>
 
-<script>
-  const adCount = 2;
-
-  setTimeout(function(){
-    for (var i = 0; i < adCount; i++){
-    
-      const adsFromGoogle =  window.adsbygoogle || []
-      adsFromGoogle.push({});
-    }
-  }, 3000)
-
-  
-
-  
-
-</script>
-
-
-<!-- write a short article website section content on "photo convert into 50 kb - Why you should convert your photos into 50 kb" -->
 
